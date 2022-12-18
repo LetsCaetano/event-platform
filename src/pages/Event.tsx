@@ -1,10 +1,15 @@
 import { Header } from "../components/Header";
-import { Logo } from "../components/Logo";
+import { Sidebar } from "../components/Sidebar";
+import { Video } from "../components/Video";
 
 export function Event() {
   return (
-    <header>
+    <div className="flex flex-col min-h-screen">
       <Header />
-    </header>
+      <main className="flex flex-1">
+        <Video />
+        <Sidebar />
+      </main>
+    </div>
   )
 }
